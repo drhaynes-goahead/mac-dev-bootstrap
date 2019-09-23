@@ -10,6 +10,7 @@ brew install node
 brew install carthage
 brew install swiftlint
 brew install youtube-dl
+brew install git-lfs
 
 # Adds support for markdown preview in Finder's QuickLook
 brew cask install qlmarkdown
@@ -116,4 +117,10 @@ defaults write ~/Library/Preferences/.GlobalPreferences CGDisableCursorLocationM
 defaults write -g com.apple.trackpad.scaling -float 8.0
 
 killall Dock
+
+# Install Bundler https://bundler.io
+sudo gem install bundler
+
+# Update global git config for LFS
+git lfs install
 
